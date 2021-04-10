@@ -4,7 +4,7 @@
     {
         //assign this a value
         $ip = $_GET['ip'];
-        $url = "http://api.ipinfodb.com/v3/ip-city/?key=6baae6583d24d510e1e69d665e3de126a52b3e416620a004ea4c1b64bc65efda&ip=".urlencode($ip)."&format=json";
+        $url = "http://api.ipinfodb.com/v3/ip-city/?key=<api-key>&ip=".urlencode($ip)."&format=json";
 
         $getResult = json_decode(file_get_contents($url));
 
